@@ -1,0 +1,13 @@
+version: '3.4'
+
+services:
+  nflrushing-api:
+    image: nflrushing
+    build: nfl-rushing-api
+    ports:
+      - 8080:8080
+  thescore:
+    container_name: thescore
+    build: thescore
+    ports:
+      - 3001:3000
